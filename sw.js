@@ -1,6 +1,6 @@
 // Fórmula Perfecta: guarda la app en el móvil para que funcione sin internet.
 // Si cambias index.html, sube también este archivo con otro número de versión.
-const CACHE = 'formula-perfecta-v3';
+const CACHE = 'formula-perfecta-v4';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', e => {

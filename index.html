@@ -540,6 +540,90 @@ body.noscroll{overflow:hidden}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .ovl-dark .ovl-box{padding:12px}
 
+/* ===================== NOVATOS ===================== */
+.btn.big{width:100%;min-height:56px;justify-content:center;font-family:var(--f-display);font-size:22px;font-style:italic;text-transform:uppercase;letter-spacing:.03em}
+.hero2{display:grid;gap:10px;border:2px solid var(--accent);background:linear-gradient(160deg,var(--accent-soft),var(--surface) 55%)}
+.hero2 h2{font-size:clamp(32px,9vw,46px);text-transform:uppercase;font-style:italic;line-height:.95;margin:0}
+.hero2 p{margin:0;font-size:16px;max-width:52ch}
+.hero-facts{display:flex;gap:8px;flex-wrap:wrap}
+.hero-facts span{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px}
+.hero-facts b{font-family:var(--f-display);font-size:17px;margin-right:3px}
+.hero2 input{font-size:17px;min-height:46px}
+.hero2 .linkish{justify-self:center;color:var(--muted);font-size:14px}
+.cont{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-color:var(--inter)}
+.cont h3{font-size:20px;margin:2px 0}
+.cont .btn.big{width:auto;min-width:200px}
+.lvl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center}
+.lvlb{width:64px;height:64px;border-radius:16px;background:var(--fg);color:var(--bg);display:grid;place-items:center;align-content:center;line-height:1}
+.lvlb span{font-size:10px;text-transform:uppercase;letter-spacing:.1em}
+.lvlb b{font-family:var(--f-display);font-size:30px}
+.lvlr h3{margin:0 0 6px;font-size:18px}
+.lvlr .hint{margin-top:6px}
+details.custom > summary,details.more > summary{cursor:pointer;list-style:none}
+details.custom > summary::-webkit-details-marker,details.more > summary::-webkit-details-marker{display:none}
+details.custom > summary span{display:grid;gap:2px}
+details.custom > summary b{font-family:var(--f-display);font-size:20px;text-transform:uppercase;font-style:italic}
+details.custom > summary small{color:var(--muted);font-size:13px}
+details.custom > summary::after{content:"Abrir ▾";float:right;font-size:13px;color:var(--muted);margin-top:-36px}
+details.custom[open] > summary{margin-bottom:12px}
+details.custom[open] > summary::after{content:"Cerrar ▴"}
+details.more{margin-top:10px;border-top:1px solid var(--line);padding-top:8px}
+details.more > summary{font-size:14px;color:var(--muted);font-weight:600;padding:4px 0}
+details.more > summary::before{content:"＋ "}
+details.more[open] > summary::before{content:"－ "}
+details.more[open] > summary{margin-bottom:8px}
+.sprog{display:flex;gap:3px;flex-wrap:wrap;margin:6px 0 4px}
+.sprog i{width:16px;height:8px;border-radius:3px;background:var(--surface-2)}
+.sprog i.cur{background:var(--accent)}
+.sprog i.s0{background:var(--line)}.sprog i.s1{background:#C08457}.sprog i.s2{background:#B8C0CC}.sprog i.s3{background:var(--gold)}
+.gold{color:var(--gold)}
+.stars{display:flex;justify-content:center;gap:10px;margin:8px 0 0}
+.st{font-size:52px;line-height:1;color:var(--surface-2);text-shadow:0 1px 0 var(--line)}
+.st.on{color:var(--gold);animation:stp .5s cubic-bezier(.2,1.8,.4,1) both;text-shadow:0 0 18px color-mix(in srgb,var(--gold) 60%,transparent)}
+@keyframes stp{from{transform:scale(0) rotate(-40deg);opacity:0}to{transform:none;opacity:1}}
+.starwhy{text-align:center;margin:4px 0 6px;font-size:15px}
+.xpgain{display:inline-block;background:var(--fg);color:var(--bg);border-radius:999px;padding:1px 9px;font-size:12px;font-weight:700;margin-left:4px}
+.sbig{font-family:var(--f-display);font-size:34px}
+.sbig span{font-size:16px;color:var(--muted)}
+.mypos{display:grid;justify-items:center;background:var(--fg);color:var(--bg);border-radius:12px;padding:6px 12px;line-height:1;min-width:84px;margin-left:auto}
+.mypos span{font-size:10px;text-transform:uppercase;letter-spacing:.1em;opacity:.75}
+.mypos b{font-family:var(--f-display);font-size:34px;font-style:italic}
+.mypos small{font-size:10.5px}
+.mypos small.up{color:#3ACB62}.mypos small.down{color:#FF4C52}.mypos small.same{opacity:.7}
+.mypos.bump{animation:bump .6s ease}.mypos.drop{animation:drop .6s ease}
+@keyframes bump{0%{transform:scale(1)}30%{transform:scale(1.18);background:var(--inter)}100%{transform:scale(1)}}
+@keyframes drop{0%{transform:scale(1)}30%{transform:scale(.92);background:var(--soft)}100%{transform:scale(1)}}
+.rh-top{align-items:center}
+.tyleg{margin:2px 0 0;font-size:12px}
+.dec .chip span{display:grid;text-align:left}
+.helpb{width:34px;padding:0;justify-content:center;font-weight:800;font-size:16px}
+.coach{display:grid;gap:10px;text-align:center;justify-items:center}
+.coach p{max-width:40ch;font-size:16px}
+.coach h2{font-size:32px}
+.cill{width:100%;display:grid;place-items:center;min-height:70px}
+.qbar.mini{height:40px;width:min(280px,100%)}
+.mkmove{animation:mkm 1.6s ease-in-out infinite alternate}
+@keyframes mkm{from{left:4%}to{left:96%}}
+.mini-lights{display:flex;gap:8px;background:#141619;padding:10px 12px;border-radius:10px}
+.mini-lights i{width:24px;height:24px;border-radius:50%;background:#FF2323;box-shadow:0 0 12px #FF2323;animation:mlo 2.4s steps(1) infinite}
+@keyframes mlo{0%,70%{opacity:1}71%,100%{opacity:.15}}
+.mini-duel{display:flex;gap:6px}
+.mini-duel span{background:var(--accent);color:var(--accent-fg);border-radius:8px;padding:8px 10px;font-weight:700;font-size:13px}
+.mini-duel span:last-child{background:var(--surface-2);color:var(--fg)}
+.cdbar.mini{width:min(260px,100%)}
+.cdbar.mini i{animation:cd 3s linear infinite}
+.mini-card{width:62px;height:84px;border-radius:10px;border:2px solid var(--gold);display:grid;place-items:center;font-family:var(--f-display);font-size:40px;color:var(--gold);animation:flipIn 1.2s ease infinite alternate}
+.cflag{display:grid;grid-template-columns:repeat(4,18px);grid-template-rows:repeat(2,18px)}
+.cflag i{background:var(--fg)}.cflag i:nth-child(odd){grid-column:auto}
+.cflag{background:repeating-conic-gradient(var(--fg) 0 25%,var(--surface) 0 50%) 0 0/36px 36px;width:108px;height:54px;border-radius:6px;border:2px solid var(--fg)}
+.cflag i{display:none}
+.help h2{font-size:30px;text-transform:uppercase;font-style:italic;margin:0}
+.steps{margin:0;padding-left:22px;display:grid;gap:8px;font-size:15px}
+.glos{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 12px;margin:0;font-size:14px}
+.glos dt{font-weight:700}
+.glos dd{margin:0;color:var(--muted)}
+@media (max-width:420px){.glos{grid-template-columns:minmax(0,1fr)}.glos dd{margin-bottom:6px}.cont .btn.big{width:100%}.st{font-size:44px}}
+
 /* ---- app instalada ---- */
 [hidden]{display:none!important}
 img{max-width:100%}
@@ -1208,7 +1292,7 @@ function abbrOf(name){const p=name.replace(/ Jr\.$/,'').split(' ');return (p[p.l
 function newGame(mode,era,opts={}){
   const E=ERAS[era];const R=JSON.parse(JSON.stringify(state.rules));
   const G={v:1,id:'g'+Date.now().toString(36),mode,era:+era,year:+era,seasonNo:1,rules:R,
-    cal:state.races.map(r=>({id:r.id,sprint:!!r.sprint,gap:r.gap})),startMD:state.start.slice(5),
+    cal:opts.cal||state.races.map(r=>({id:r.id,sprint:!!r.sprint,gap:r.gap})),startMD:opts.cal?'03-08':state.start.slice(5),
     teams:{},drivers:{},tOrder:[],player:{},season:null,history:[],owner:[],news:[],phase:'season',seq:0,created:Date.now()};
   E.teams.forEach((t,i)=>{G.teams[t.id]={id:t.id,n:t.n,c:t.c,car:t.car,rel:t.rel,w:t.w,fac:+(0.85+t.w*0.3).toFixed(2),pw:+rnd(-2,2).toFixed(1),next:0,cpos:i+1,sup:i%2,
     st:{w:0,t:0,po:0,pts:0,pd:0}};G.tOrder.push(t.id);});
@@ -1745,7 +1829,7 @@ function records(G){
 // JUEGO · pantallas
 // =====================================================================
 let GAME=null,GAMES=[],LIVE=null;const GAME_CACHE={};
-const gui={screen:'menu',setup:{mode:'jefe',era:'2025',team:null,newTeam:false,teamName:'',name:'',num:27,flag:'🇪🇸',style:'consistente'},stand:'pilotos',hist:'campeones',lastRes:null,confirm:null,prop:{rule:'',val:''}};
+const gui={screen:'menu',setup:{mode:'jefe',era:'2025',team:null,newTeam:false,teamName:'',name:'',num:27,flag:'🇪🇸',style:'consistente',len:'corta'},stand:'pilotos',hist:'campeones',lastRes:null,confirm:null,prop:{rule:'',val:''}};
 const MODE_N={jefe:'Jefe de equipo',dueno:'Dueño de la F1',piloto:'Piloto'};
 const MODE_D={jefe:'Eliges equipo, fichas pilotos, repartes el dinero y decides la estrategia. Si no cumples el objetivo, la junta te despide.',
   dueno:'Pones el calendario y el reglamento y ves pasar las temporadas. Cada invierno propones cambios y los equipos votan.',
@@ -1812,49 +1896,51 @@ function renderGameMenu(el){
       <div class="field"><span>Estilo</span></div><div class="chips">${Object.entries(STYLE_N).map(([k,[n,d]])=>`<button class="chip" data-act="gStyle" data-v="${k}" aria-pressed="${s.style===k}">${n}<small>${d}</small></button>`).join('')}</div>
       <div class="field" style="margin-top:12px"><span>Ofertas para tu primer año (te sientas en el sitio de su peor piloto)</span></div><div class="teampick">${offers.map(t=>`<button class="tp ${s.team===t.id?'on':''}" data-act="gTeam" data-t="${t.id}" aria-pressed="${s.team===t.id}"><i class="tdot" style="background:${t.c}"></i><b>${esc(t.n)}</b><span class="hint">Coche ${mini(t.car,96,60)}</span></button>`).join('')}</div>`;
   }else{
-    setup=`<ul class="plain"><li>Usas tu calendario y tu reglamento tal cual están ahora.</li><li>Cada invierno propones hasta 3 cambios de reglas y los equipos votan. La FIA puede vetar lo que sea peligroso.</li><li>Te puntúan la audiencia, el dinero y lo contentos que están los equipos.</li></ul>`;
+    setup=`<ul class="plain"><li>Usas tu reglamento tal cual está ahora (y tu calendario si eliges «Tu calendario»).</li><li>Cada invierno propones hasta 3 cambios de reglas y los equipos votan. La FIA puede vetar lo que sea peligroso.</li><li>Te puntúan la audiencia, el dinero y lo contentos que están los equipos.</li></ul>`;
   }
-  const can=calN>=3&&(s.mode!=='jefe'||s.team||s.newTeam)&&(s.mode!=='piloto'||(s.team&&s.name.trim().length>=3));
+  const can=(s.len!=='tuya'||calN>=3)&&(s.mode!=='jefe'||s.team||s.newTeam)&&(s.mode!=='piloto'||(s.team&&s.name.trim().length>=3));
   el.innerHTML=`<div class="view">
-   <section class="panel g-hero"><span class="eyebrow">Modo juego</span><h2>Temporadas</h2><p>Juega año tras año con <b>tu</b> calendario (${calN} carreras) y <b>tu</b> reglamento. Las reglas cambian lo que pasa en pista: desgaste, repostaje, coche de seguridad, adelantamientos, dinero, fichajes…</p>
-     <p class="hint">Calendario: nota ${fmt1(O2.A.score/10)} · Reglamento: nota ${fmt1(O2.reg/10)}. Si quieres cambiarlos, hazlo en sus pestañas antes de empezar.</p></section>
-   ${GAMES.length?`<section class="panel"><div class="panel-h"><h2>Tus partidas</h2><p>${vMode==='db'?'Guardadas en tu cuenta':'Guardadas en este dispositivo'}</p></div><div class="versions">${saved}</div></section>`:''}
+   ${continueHTML()}${heroHTML()}${levelHTML()}
+   ${GAMES.length>1?`<section class="panel"><div class="panel-h"><h2>Tus partidas</h2><p>${vMode==='db'?'Guardadas en tu cuenta':'Guardadas en este dispositivo'}</p></div><div class="versions">${saved}</div></section>`:''}
    ${achMenuHTML()}
-   <section class="panel"><div class="panel-h"><h2>Nueva partida</h2></div>
+   <details class="panel custom" ${gui.openCustom?'open':''}><summary data-act="gCustom"><span><b>Partida personalizada</b><small>Jefe de equipo, dueño de la F1 o piloto · elige época, equipo y duración. Usa tu reglamento.</small></span></summary>
      <div class="field"><span>1 · Modo de juego</span></div>
      <div class="modes">${['jefe','dueno','piloto'].map(m=>`<button class="mode ${s.mode===m?'on':''}" data-act="gMode" data-m="${m}" aria-pressed="${s.mode===m}"><b>${MODE_N[m]}</b><span>${MODE_D[m]}</span></button>`).join('')}</div>
      <div class="field" style="margin-top:14px"><span>2 · Época de salida (pilotos y equipos reales de ese año)</span></div>
      <div class="chips">${Object.keys(ERAS).sort().map(y=>`<button class="chip" data-act="gEra" data-y="${y}" aria-pressed="${s.era===y}">${y}<small>${ERA_BLURB[y]||''}</small></button>`).join('')}</div>
      <div class="field" style="margin-top:14px"><span>3 · ${s.mode==='jefe'?'Tu equipo':s.mode==='piloto'?'Tu piloto':'Qué harás'}</span></div>
      ${setup}
-     <div class="row" style="margin-top:16px"><button class="btn primary" data-act="gStart" ${can?'':'disabled'}>Empezar temporada ${s.era}</button>${calN<3?'<span class="hint">Necesitas al menos 3 carreras en tu calendario.</span>':''}${s.mode==='piloto'&&s.name.trim().length<3?'<span class="hint">Escribe el nombre de tu piloto.</span>':''}</div>
+     <div class="field" style="margin-top:14px"><span>4 · Duración de cada temporada</span></div>
+     <div class="chips">${[['corta','Corta','8 carreras · 15 min'],['media','Media','12 carreras'],['tuya','Tu calendario',calN+' carreras']].map(([k,l,d])=>`<button class="chip" data-act="gLen" data-v="${k}" aria-pressed="${s.len===k}">${l}<small>${d}</small></button>`).join('')}</div>
+     <div class="row" style="margin-top:16px"><button class="btn primary" data-act="gStart" ${can?'':'disabled'}>Empezar temporada ${s.era}</button>${s.len==='tuya'&&calN<3?'<span class="hint">Necesitas al menos 3 carreras en tu calendario.</span>':''}${s.mode==='piloto'&&s.name.trim().length<3?'<span class="hint">Escribe el nombre de tu piloto.</span>':''}</div>
      <p class="hint" style="margin-top:10px">Los niveles de pilotos y coches salen de sus resultados reales de ese año. A partir de ahí todo es simulado: los novatos y los equipos nuevos son inventados.</p>
-   </section></div>`;
+   </details></div>`;
 }
 
 // ----- hub de la temporada
 function renderHub(el){
   const G=GAME,Ss=G.season,ri=Ss.round,n=G.cal.length,ended=ri>=n;
   const DS=standings(G),TS=teamStandings(G);
-  const head=`<div class="g-top"><button class="btn sm ghost" data-act="gMenu">‹ Partidas</button><div class="g-title"><span class="eyebrow">${MODE_N[G.mode]} · desde ${G.era}</span><h2>Temporada ${G.year}</h2></div><div class="row"><button class="btn sm ghost snd" data-act="gSound" aria-pressed="${SFX.on}" title="Sonido">${soundLabel()}</button><button class="btn sm" data-act="gHist">Palmarés</button></div></div>`;
+  const head=`<div class="g-top"><button class="btn sm ghost" data-act="gMenu">‹ Partidas</button><div class="g-title"><span class="eyebrow">${MODE_N[G.mode]} · desde ${G.era}</span><h2>Temporada ${G.year}</h2></div><div class="row">${helpBtn}<button class="btn sm ghost snd" data-act="gSound" aria-pressed="${SFX.on}" title="Sonido">${soundLabel()}</button><button class="btn sm" data-act="gHist">Palmarés</button></div></div>`;
   let next='';
   if(!ended){const c=CBY[G.cal[ri].id];const mine=G.mode==='jefe'?teamDrivers(G,G.player.team):[];
     const strat=G.mode==='jefe'?`<div class="field" style="margin-top:10px"><span>Estrategia para tus pilotos</span></div>${mine.map(d=>{const v=(G.player.strat||{})[d.id]||0;return `<div class="row srow"><b>${esc(d.n)}</b><div class="chips">${[[-1,'Menos paradas'],[0,'Normal'],[1,'Más paradas']].map(([k,l])=>`<button class="chip" data-act="gStrat" data-d="${d.id}" data-v="${k}" aria-pressed="${v===k}">${l}</button>`).join('')}</div></div>`;}).join('')}`
       :G.mode==='piloto'?`<div class="field" style="margin-top:10px"><span>Cómo vas a correr</span></div><div class="chips">${[[-1,'Cuidar el coche','Menos errores y menos desgaste'],[0,'Normal',''],[1,'Atacar','Más rápido, más riesgo']].map(([k,l,d])=>`<button class="chip" data-act="gFocus" data-v="${k}" aria-pressed="${(G.player.focus||0)===k}">${l}${d?`<small>${d}</small>`:''}</button>`).join('')}</div>`:'';
-    next=`<section class="panel next"><span class="eyebrow">Carrera ${ri+1} de ${n}</span><h2>${c.flag} GP de ${esc(c.n)}</h2>
+    next=`<section class="panel next"><span class="eyebrow">Carrera ${ri+1} de ${n}</span>${starCells(G)}<h2>${c.flag} GP de ${esc(c.n)}</h2>
       <div class="row meta"><span class="num">${dShort(G.dates[ri])} ${new Date(G.dates[ri]).getUTCFullYear()}</span><span>${c.tipo==='calle'?'Urbano':'Permanente'} · ${PERFIL_N[c.perfil]}</span><span>Lluvia: ${rainChance(G,ri)}</span>${G.cal[ri].sprint?'<span class="tag on">Sprint</span>':''}</div>
       ${strat}
-      <div class="row" style="margin-top:12px"><button class="btn primary" data-act="gLive">${G.mode==='dueno'?'Ver en directo':'Jugar en directo'}</button><button class="btn" data-act="gHigh">Resumen (30 s)</button><button class="btn" data-act="gQuick">Rápido</button><button class="btn ghost" data-act="gToEnd">Hasta el final</button></div>
-      <p class="hint" style="margin-top:6px">${G.mode==='dueno'?'En directo: semáforo, carrera y cámara lenta al final.':'En directo: clasificación jugable, semáforo de salida, duelos y decisiones de boxes.'}</p></section>`;}
+      <button class="btn primary big" data-act="gLive" style="margin-top:12px">▶ ${G.mode==='dueno'?'Ver la carrera':'Jugar la carrera'}</button>
+      <p class="hint" style="margin-top:6px;text-align:center">${G.mode==='dueno'?'Haz tu pronóstico abajo y mira la carrera.':'Clasificas, das la salida y decides en los momentos clave.'}</p>
+      <details class="more"><summary>Otras formas de jugarla</summary><div class="row"><button class="btn" data-act="gHigh">Ver resumen (30 s)</button><button class="btn" data-act="gQuick">Solo el resultado</button><button class="btn ghost" data-act="gToEnd">Simular el resto de la temporada</button></div></details></section>`;}
   else next=`<section class="panel next"><span class="eyebrow">Temporada ${G.year} terminada</span><h2>${esc(dName(G,DS[0]&&DS[0].d))} es campeón</h2><div class="row" style="margin-top:12px"><button class="btn primary" data-act="gEndSeason">Ir al invierno</button></div></section>`;
   // panel del jugador
   let me='';
   if(G.mode==='jefe'){const tm=G.teams[G.player.team],rank=G.tOrder.slice().sort((a,b)=>G.teams[b].car-G.teams[a].car).indexOf(tm.id)+1,pos=TS.findIndex(r=>r.t===tm.id)+1,a=G.player.alloc,sa=sum(Object.values(a))||1,B=jefeBudget(G);
     me=`<section class="panel"><div class="panel-h"><h2>${tDot(G,tm.id)} ${esc(tm.n)}</h2><p>P${pos} en constructores · objetivo: P${G.player.target} o mejor</p></div>
       <div class="kv"><span>Coche</span><b>${fmt1(tm.car)} ${mini(tm.car,98,60)} <small>${rank}º de ${G.tOrder.length}</small></b><span>Fiabilidad</span><b>${fmt1(tm.rel)}%</b><span>Dinero</span><b>${fmt(B.money)} M · gastas ${fmt(Math.min(tm.spend,CAP_M[G.rules.cap]))} M</b><span>Sueldos</span><b>${fmt1(B.sal)} M</b><span>Confianza de la junta</span><b>${Math.round(G.player.board)} ${mini(G.player.board,100,0)}</b></div>
-      <div class="field" style="margin-top:12px"><span>En qué gastas el dinero (se aplica en las próximas mejoras)</span></div>
+      <details class="more"><summary>Gestionar el dinero del equipo</summary><div class="field"><span>En qué gastas el dinero (se aplica en las próximas mejoras)</span></div>
       <div class="alloc">${[['cur','Coche de este año'],['next','Coche del año que viene'],['rel','Fiabilidad'],['fac','Fábrica']].map(([k,l])=>`<label><span>${l}<b class="num">${Math.round(a[k]/sa*100)}%</b></span><input type="range" min="0" max="100" value="${a[k]}" data-alloc="${k}" id="al-${k}"></label>`).join('')}</div>
-      <p class="hint">Fábrica: mejora a la larga todo lo que desarrollas. Coche del año que viene: cuenta mucho si cambian las reglas técnicas.</p></section>`;}
+      <p class="hint">Fábrica: mejora a la larga todo lo que desarrollas. Coche del año que viene: cuenta mucho si cambian las reglas técnicas.</p></details></section>`;}
   if(G.mode==='piloto'){const d=G.drivers[G.player.driver],row=DS.findIndex(r=>r.d===d.id),mate=teamDrivers(G,d.team).find(x=>x.id!==d.id),mr=mate?DS.findIndex(r=>r.d===mate.id):-1;
     me=`<section class="panel"><div class="panel-h"><h2>${d.f} ${esc(d.n)} <span class="num" style="color:var(--muted)">#${d.num}</span></h2><p>${tDot(G,d.team)} ${esc(tName(G,d.team))} · ${d.age} años · contrato ${d.yrs} año${d.yrs===1?'':'s'}</p></div>
       <div class="kv"><span>Ritmo</span><b>${fmt1(d.p)} ${mini(d.p)}</b><span>Lluvia</span><b>${fmt1(d.w)} ${mini(d.w)}</b><span>Adelantar</span><b>${fmt1(d.rc)} ${mini(d.rc)}</b><span>Constancia</span><b>${fmt1(d.cs)} ${mini(d.cs)}</b><span>Fama</span><b>${Math.round(G.player.rep)} ${mini(G.player.rep,100,0)}</b></div>
@@ -1867,9 +1953,9 @@ function renderHub(el){
   const myIds=new Set(G.mode==='jefe'?teamDrivers(G,G.player.team).map(d=>d.id):G.mode==='piloto'?[G.player.driver]:[]);
   const stand=gui.stand==='pilotos'?`<table><thead><tr><th>Pos</th><th>Piloto</th><th class="r">Pts</th><th class="r">Vict.</th></tr></thead><tbody>${DS.map((r,i)=>`<tr class="${myIds.has(r.d)?'me':''}"><td class="num">${i+1}</td><td class="dn">${G.drivers[r.d].f||''} ${esc(dName(G,r.d))}${r.fin?' <b style="color:var(--accent)">·playoff</b>':''}<small>${tDot(G,G.drivers[r.d].team)}${esc(tName(G,G.drivers[r.d].team))}</small></td><td class="r num"><b>${fmt1(r.pts).replace(',0','')}</b></td><td class="r num">${r.w}</td></tr>`).join('')}</tbody></table>`
     :`<table><thead><tr><th>Pos</th><th>Equipo</th><th class="r">Pts</th><th class="r">Vict.</th></tr></thead><tbody>${TS.map((r,i)=>`<tr class="${G.mode==='jefe'&&r.t===G.player.team?'me':''}"><td class="num">${i+1}</td><td class="dn">${tDot(G,r.t)} ${esc(tName(G,r.t))}${r.out?' <small>excluido</small>':''}</td><td class="r num"><b>${fmt1(r.pts).replace(',0','')}</b></td><td class="r num">${r.w}</td></tr>`).join('')}</tbody></table>`;
-  const cal=G.cal.map((r,i)=>{const c=CBY[r.id],res=Ss.results[i];return `<li class="${i===ri?'cur':''}"><span class="num">${i+1}</span><span>${c.flag} ${esc(c.n)}${r.sprint?' <small class="tag">S</small>':''}</span><span class="hint">${res?`${G.drivers[res.w].f||''} ${esc(dShortN(G,res.w))}${res.wet?' · lluvia':''}`:dShort(G.dates[i])}</span></li>`;}).join('');
+  const cal=G.cal.map((r,i)=>{const c=CBY[r.id],res=Ss.results[i],st=Ss.stars&&Ss.stars[i];return `<li class="${i===ri?'cur':''}"><span class="num">${i+1}</span><span>${c.flag} ${esc(c.n)}${r.sprint?' <small class="tag" title="Mini carrera el sábado">Sprint</small>':''}</span><span class="hint">${res?`${st!=null?'<b class="gold">'+'★'.repeat(st)+'</b> ':''}${G.drivers[res.w].f||''} ${esc(dShortN(G,res.w))}`:dShort(G.dates[i])}</span></li>`;}).join('');
   el.innerHTML=`<div class="view">${head}<div class="hub-grid"><div class="stack">${next}${hubExtras(G)}${me}
-    <section class="panel"><div class="panel-h"><h2>Noticias</h2></div><ul class="newsfeed">${G.news.slice(0,10).map(x=>`<li class="${x.type}"><span class="hint">${x.y}</span> ${esc(x.txt)}</li>`).join('')||'<li class="hint">Todavía no ha pasado nada. ¡A correr!</li>'}</ul></section></div>
+    <section class="panel"><div class="panel-h"><h2>Noticias</h2></div><ul class="newsfeed">${G.news.slice(0,5).map(x=>`<li class="${x.type}"><span class="hint">${x.y}</span> ${esc(x.txt)}</li>`).join('')||'<li class="hint">Todavía no ha pasado nada. ¡A correr!</li>'}</ul></section></div>
    <div class="stack"><section class="panel"><div class="panel-h"><h2>Clasificación</h2><div class="chips"><button class="chip" data-act="gStand" data-v="pilotos" aria-pressed="${gui.stand==='pilotos'}">Pilotos</button><button class="chip" data-act="gStand" data-v="equipos" aria-pressed="${gui.stand==='equipos'}">Equipos</button></div></div><div class="tbl-wrap">${stand}</div>
      <p class="hint" style="margin-top:8px">Con tus reglas: ${esc(PTS_PRESETS.find(p=>p.id===G.rules.ptsPreset)?.n||'puntos a mano')} · ${esc(RULE_BY.champ.opts.find(o=>o.v===G.rules.champ).l.toLowerCase())}.</p></section>
    <section class="panel"><div class="panel-h"><h2>Calendario ${G.year}</h2></div><ol class="gcal">${cal}</ol></section></div></div></div>`;
@@ -1889,7 +1975,7 @@ function renderWinter(el){
     if(G.mode==='piloto')verdict=`<div class="banner ${v.champ?'changed':''}"><span class="eyebrow">Tu temporada</span><span class="big">${v.champ?'¡Campeón del mundo!':'P'+v.pos+' en el mundial'}</span><span>${v.beat?'Le ganaste a tu compañero.':'Tu compañero acabó por delante.'} Fama: ${Math.round(v.rep)}.</span></div>`;
     if(G.mode==='dueno')verdict=`<div class="banner"><span class="eyebrow">Tu negocio</span><span class="big">${v.aud} millones de espectadores</span><span>Ingresos: ${fmt1(v.rev)} · equipos contentos: ${fmt1(h.sat/10)} · aficionados: ${fmt1(h.fans/10)}</span></div>`;
     body=`<section class="panel"><span class="eyebrow">Temporada ${h.y}</span><h2>🏆 ${h.champ?esc(h.champ.f+' '+h.champ.n):'—'}</h2><p>${h.champ?`${esc(h.champ.tn)} · ${fmt1(h.champ.pts).replace(',0','')} puntos · ${h.champ.w} victorias`:''}${h.margin<5?' · ¡título decidido por muy poco!':''}</p>
-      <p>Constructores: ${h.champT?`<b>${esc(h.champT.n)}</b> (${fmt1(h.champT.pts).replace(',0','')} pts)`:'—'}</p>${verdict}${nemWinterHTML(G,h)}
+      <p>Constructores: ${h.champT?`<b>${esc(h.champT.n)}</b> (${fmt1(h.champT.pts).replace(',0','')} pts)`:'—'}</p>${verdict}${seasonStarsHTML(h)}${nemWinterHTML(G,h)}
       <div class="tbl-wrap" style="margin-top:12px"><table><tbody>${h.top.map((r,i)=>`<tr><td class="num">${i+1}</td><td>${r[2]||''} ${esc(r[1])}<small style="display:block;color:var(--muted)">${esc(r[3])}</small></td><td class="r num"><b>${fmt1(r[4]).replace(',0','')}</b></td><td class="r num">${r[5]} v</td></tr>`).join('')}</tbody></table></div></section>`;
   }
   if(step===1){const E=W.evo;const row=(id,extra)=>{const d=G.drivers[id];return `<li>${d.f||''} <b>${esc(d.n)}</b> <span class="hint">${d.age} años · ${extra}</span></li>`;};
@@ -1907,7 +1993,7 @@ function renderWinter(el){
       <div class="row" style="margin-top:14px"><button class="btn primary" data-act="gNewSeason">Empezar temporada ${G.year+1}</button></div></section>`;}
   const canNext=step<4&&!(step===0&&v.fired)&&!(step===2&&!W.marketDone)&&!(step===3&&!W.vote);
   el.innerHTML=`<div class="view"><div class="g-top"><button class="btn sm ghost" data-act="gMenu">‹ Partidas</button><div class="g-title"><span class="eyebrow">${MODE_N[G.mode]}</span><h2>Invierno ${G.year}–${G.year+1}</h2></div><button class="btn sm" data-act="gHist">Palmarés</button></div>
-    ${nav}${body}${canNext?`<div class="row"><button class="btn primary" data-act="gWNext">Siguiente: ${WSTEPS[step+1]}</button></div>`:''}</div>`;
+    ${nav}${step===0&&!(v&&v.fired)&&G.phase!=='over'?`<div class="row"><button class="btn primary" data-act="gWinterSkip">⏩ Saltar al año ${G.year+1}</button><span class="hint">O revisa fichajes y reglas paso a paso:</span></div>`:''}${body}${canNext?`<div class="row"><button class="btn primary" data-act="gWNext">Siguiente: ${WSTEPS[step+1]}</button></div>`:''}</div>`;
 }
 function renderMarket(G){
   const W=G.winter;
@@ -1977,7 +2063,7 @@ function gameAction(a,b,e){
     case 'gTeam':gui.setup.team=b.dataset.t;gui.setup.newTeam=false;break;
     case 'gNewTeam':gui.setup.newTeam=true;gui.setup.team=null;break;
     case 'gStyle':gui.setup.style=b.dataset.v;break;
-    case 'gStart':{const s=gui.setup;GAME=newGame(s.mode,s.era,{team:s.team,newTeam:s.newTeam,teamName:s.teamName.trim(),name:s.name.trim(),num:+s.num||27,flag:s.flag,style:s.style});
+    case 'gStart':{const s=gui.setup;GAME=newGame(s.mode,s.era,{team:s.team,newTeam:s.newTeam,teamName:s.teamName.trim(),name:s.name.trim(),num:+s.num||27,flag:s.flag,style:s.style,cal:calFor(s.len)});
       gui.screen='hub';gameSave(true);toast('¡Partida creada!');render();window.scrollTo(0,0);return true;}
     case 'gLoad':{gameLoad(b.dataset.id).then(G2=>{if(!G2){toast('No se pudo abrir esa partida.');return;}GAME=G2;if(GAME.season&&!GAME.dates)GAME.dates=seasonDates(GAME);gui.screen='hub';render();window.scrollTo(0,0);});return true;}
     case 'gDel':gui.confirm='gdel:'+b.dataset.id;break;
@@ -2121,7 +2207,7 @@ function achSave(){store.set('fp-gach',GACH);store.set('fp-gstat',GSTAT);clearTi
 const ACHQ=[];let achBusy=false;
 function achToast(a){ACHQ.push(a);if(!achBusy)achNext();}
 function achNext(){const a=ACHQ.shift();if(!a){achBusy=false;return;}achBusy=true;const d=document.createElement('div');d.className='achb';d.setAttribute('role','status');
-  d.innerHTML=`<span>Logro desbloqueado</span><b>${esc(a.n)}</b><small>${esc(a.d)}</small>`;document.body.appendChild(d);SFX.ach();
+  d.innerHTML=`<span>${esc(a.k||'Logro desbloqueado')}</span><b>${esc(a.n)}</b><small>${esc(a.d)}</small>`;document.body.appendChild(d);SFX.ach();
   setTimeout(()=>d.classList.add('out'),2400);setTimeout(()=>{d.remove();achNext();},2800);}
 function unlock(id,silent){if(GACH[id])return null;GACH[id]=Date.now();achSave();const a=ACH.find(x=>x.id===id);if(a&&!silent)achToast(a);return a||null;}
 function achHTML(){const got=ACH.filter(a=>GACH[a.id]).length;
@@ -2305,7 +2391,7 @@ const CARDS={
 };
 function drawCard(G){const pool=(CARDS[G.mode]||[]).filter(c=>!c.ok||c.ok(G));if(!pool.length)return;const last=G.player.lastCards||[];
   let cands=pool.filter(c=>!last.includes(c.id));if(!cands.length)cands=pool;const c=pick(cands);G.season.card={id:c.id,ri:G.season.round};G.player.lastCards=[c.id,...last].slice(0,4);}
-function openCard(){const G=GAME;const cd=G&&G.season.card;if(!cd)return;const C=(CARDS[G.mode]||[]).find(x=>x.id===cd.id);if(!C||G.season.round>=G.cal.length){G.season.card=null;return;}
+function openCard0(){const G=GAME;const cd=G&&G.season.card;if(!cd)return;const C=(CARDS[G.mode]||[]).find(x=>x.id===cd.id);if(!C||G.season.round>=G.cal.length){G.season.card=null;return;}
   const c=CBY[G.cal[G.season.round].id];
   ovl(`<div class="cardf"><span class="eyebrow">Carta sorpresa · antes del GP de ${esc(c.n)}</span><h2>${esc(C.t)}</h2><p>${esc(C.txt(G))}</p>
     <div class="cbtns"><button class="btn primary" data-act="gCard" data-o="a">${esc(C.a.l)}</button><button class="btn" data-act="gCard" data-o="b">${esc(C.b.l)}</button></div></div>`,'ovl-card');SFX.pop();}
@@ -2349,9 +2435,10 @@ function postRace(G,ri,W,Q,R,SR,x={}){
   if(rx.title&&rx.title.mine){const a=unlock('champ',x.silent);if(a)rx.ach.push(a);if(GSTAT.titles>=5){const b=unlock('champs5',x.silent);if(b)rx.ach.push(b);}}
   if(G.mode==='dueno'&&GSTAT.preds>=5){const a=unlock('pred5',x.silent);if(a)rx.ach.push(a);}
   if(!x.silent&&Ss.round<G.cal.length&&!Ss.card&&Math.random()<0.45)drawCard(G);
-  achSave();return rx;
+  rateRace(G,R,Q,rx,x);achSave();return rx;
 }
 function seasonEndExtras(G,hist){
+  hist.stars=sum((G.season.stars||[]).map(x=>x||0));hist.maxStars=G.cal.length*3;
   const U=id=>unlock(id);const N=G.player.nem;
   if(N&&G.mode!=='dueno'){hist.nem={name:nemLabel(G),sw:N.sw,sl:N.sl};G.player.nemNew=false;
     if(N.sw>N.sl&&N.sw+N.sl>=3){U('nemesis');news(G,`Has superado a ${hist.nem.name} este año (${N.sw}-${N.sl})`,'big');pickNemesis(G,N);G.player.nemNew=true;}
@@ -2410,7 +2497,7 @@ function createLive(ri,W,Q,extra={}){
 function renderRace(el){
   const G=GAME,{W,Q,S,SR}=LIVE,c=W.c,mine=S.cars.filter(x=>isMine(G,x.d));
   el.innerHTML=`<div class="view race-scr">
-   <section class="panel race-head"><div class="rh-top"><div><span class="eyebrow">Carrera ${LIVE.ri+1} de ${G.cal.length} · ${G.year}</span><h2>${c.flag} GP de ${esc(c.n)}</h2></div><button class="btn sm ghost snd" data-act="gSound" aria-pressed="${SFX.on}" title="Sonido">${soundLabel()}</button></div>
+   <section class="panel race-head"><div class="rh-top"><div><span class="eyebrow">Carrera ${LIVE.ri+1} de ${G.cal.length} · ${G.year}</span><h2>${c.flag} GP de ${esc(c.n)}</h2></div><div class="mypos" id="mypos" hidden></div><button class="btn sm ghost snd" data-act="gSound" aria-pressed="${SFX.on}" title="Sonido">${soundLabel()}</button></div>
      <div class="row"><span class="lapc num" id="lapc"></span><span class="tag" id="wx"></span><span class="tag on" id="scf" hidden></span></div>
      <div class="finalbox" id="finalbox" hidden></div>
      <div class="row ctrl"><button class="btn primary" data-act="gPlay" id="playBtn">¡Salida!</button><div class="chips">${['x1','x3','x10'].map((l,i)=>`<button class="chip" data-act="gSpeed" data-v="${i}" aria-pressed="${LIVE.speed===i}">${l}</button>`).join('')}</div><button class="btn" data-act="gJump">Siguiente momento</button><button class="btn ghost" data-act="gSkip">Al final</button></div>
@@ -2444,6 +2531,7 @@ function liveUpdate(){
     return `<div class="mycar"><div><b>${esc(G.drivers[c.d].n)}</b> <span class="hint">${c.dnf?'Fuera: '+esc(c.dnf):`P${pos} · ${TY[c.tyre].n.toLowerCase()} (${Math.max(0,c.age)} v)${c.box?` · entrará a boxes: ${TY[c.box].n.toLowerCase()}`:''}`}</span></div>
       ${c.dnf?'':`<div class="chips">${[[-1,'Cuidar'],[0,'Normal'],[1,'Atacar']].map(([v,l])=>`<button class="chip" data-act="gPush" data-d="${c.d}" data-v="${v}" aria-pressed="${c.push===v}">${l}</button>`).join('')}</div>
       <div class="chips"><span class="hint" style="align-self:center">Boxes:</span>${['S','M','H','I','W'].map(k=>`<button class="chip tyc" data-act="gBox" data-d="${c.d}" data-v="${k}" aria-pressed="${c.box===k}">${tyreB(k)}</button>`).join('')}</div>`}</div>`;}).join('');}
+  myPosHUD(o);
   const pb=$('#playBtn');if(pb)pb.textContent=!LIVE.started?'¡Salida!':LIVE.paused?'Seguir':'Pausa';
 }
 function drawRing(){
@@ -2491,7 +2579,7 @@ function jumpNext(){const S=LIVE.S,G=GAME;let guard=0;LIVE.paused=false;
 function finishLive(){if(!LIVE)return;const {ri,W,Q,SR,S}=LIVE;if(!S.done)runQuick(S);const x={react:LIVE.react,purple:LIVE.purple};LIVE=null;SFX.engineOff();completeWeekend(ri,W,Q,S.res,SR,S.events,x);}
 
 // ---------- semáforo de salida
-function startLights(){
+function startLights0(){
   const G=GAME,S=LIVE.S,player=G.mode!=='dueno';LIVE.started=true;LIVE.paused=true;SFX.init();
   const d=ovl(`<div class="lights-wrap"><div class="lights">${[0,1,2,3,4].map(i=>`<div class="lt" id="lt${i}"><i></i><i></i></div>`).join('')}</div>
     <p class="react" id="ltMsg">${player?'Toca la pantalla cuando se apaguen':'Atentos…'}</p><p class="hint" id="ltHint">${player?'Si tocas antes de tiempo: salida en falso y 5 s de sanción.':''}</p></div>`,'ovl-dark ovl-lights');
@@ -2518,12 +2606,12 @@ const DEC={
 };
 function defDec(kind,c,S){if(kind==='wet')return 'box-I';if(kind==='dry')return 'box-M';const nx=c.plan.seq[Math.min(c.si+1,c.plan.seq.length-1)]||'M';
   if(kind==='sc')return c.si<c.plan.stops.length&&c.plan.stops[c.si]-S.lap<=7?'box-'+nx:'stay';return 'box-'+(nx==='S'&&S.laps-S.lap>15?'M':nx);}
-function openDecision(kind,cars){
+function openDecision0(kind,cars){
   const S=LIVE.S,G=GAME,D=DEC[kind];LIVE.paused=true;SFX.engineOff();LIVE.engOn=false;if(kind==='sc')SFX.sc();else SFX.tick();
   const sel={};cars.forEach(c=>sel[c.d]=defDec(kind,c,S));LIVE.dec={kind,sel,cars:cars.map(c=>c.d)};const secs=LIVE.speed===0?7:5;const o=order(S);
   ovl(`<div class="dec"><span class="eyebrow">Vuelta ${S.lap} de ${S.laps} · decide rápido</span><h2>${D.t}</h2><p>${D.s}</p>
     ${cars.map(c=>`<div class="decrow"><div><b>${esc(G.drivers[c.d].n)}</b> <span class="hint">P${o.indexOf(c)+1} · ${TY[c.tyre].n.toLowerCase()} (${Math.max(0,c.age)} v)</span></div>
-      <div class="chips">${D.o.map(([k,l])=>`<button class="chip" data-act="gDecPick" data-c="${c.d}" data-k="${k}" aria-pressed="${sel[c.d]===k}">${k.startsWith('box-')?tyreB(k.slice(4))+' ':''}${l}</button>`).join('')}</div></div>`).join('')}
+      <div class="chips">${D.o.map(([k,l])=>`<button class="chip" data-act="gDecPick" data-c="${c.d}" data-k="${k}" aria-pressed="${sel[c.d]===k}">${k.startsWith('box-')?tyreB(k.slice(4))+' ':''}<span>${l}${tyH(k)}</span></button>`).join('')}</div></div>`).join('')}
     <div class="cdbar"><i style="animation-duration:${secs}s"></i></div><div class="row"><button class="btn primary" data-act="gDecGo">Confirmar</button><span class="hint" id="cdN">${secs} s</span></div></div>`,'ovl-dec');
   let n=secs;ovl._t=setInterval(()=>{n--;const e=$('#cdN');if(e)e.textContent=n+' s';if(n<=3&&n>0)SFX.tick();if(n<=0){clearInterval(ovl._t);applyDecision();}},1000);
 }
@@ -2534,7 +2622,7 @@ function applyDecision(){if(!LIVE)return;const S=LIVE.S,D=LIVE.dec;if(!D)return;
   ovlClose();resumeLive();}
 
 // ---------- duelos
-function openDuel(c,o,attack){
+function openDuel0(c,o,attack){
   const S=LIVE.S,G=GAME;LIVE.paused=true;SFX.engineOff();LIVE.engOn=false;LIVE.duels=(LIVE.duels||0)+1;c.lastDuel=S.lap;
   const me=G.drivers[c.d],ot=G.drivers[o.d],gap=Math.abs(c.cum-o.cum);LIVE.duel={c:c.d,o:o.d,attack,done:false};
   const opts=attack?[['in','Por dentro'],['out','Por fuera'],['wait','Esperar']]:[['in','Cubrir dentro'],['out','Cubrir fuera'],['none','No defender']];
@@ -2582,7 +2670,7 @@ function checkTriggers(){
 
 // ---------- minijuego de clasificación
 let QG=null;
-function startQualiGame(){
+function startQualiGame0(){
   const G=GAME,{ri,W}=prepWeekend(G),mine=myDriverIds(G);
   QG={ri,W,mine,sec:0,sc:[],zones:[0,1,2].map(i=>{const w=[17,13,10][i];return {w,x:rnd(6,94-w)};}),T:[1250,1000,820],t0:performance.now(),ph:Math.random(),locked:false,pos:0};
   const c=W.c;SFX.init();
@@ -2660,7 +2748,7 @@ function completeWeekend(ri,W,Q,R,SR,events,x={}){
   const G=GAME,before=standings(G).map(r=>r.d);applyWeekend(G,ri,W,Q,R,SR);
   const P=G.season.results[G.season.results.length-1].pts;const rx=postRace(G,ri,W,Q,R,SR,x);
   gui.lastRes={ri,id:G.cal[ri].id,R,SR:SR&&{w:SR.order[0]},pole:Q.pole,P,rain:W.rain,ev:(events||[]).filter(e=>['sc','rain','lead','win','dnf','fl'].includes(e.type)).slice(0,14),before,x:rx};
-  gui.screen='result';gameSave();render();window.scrollTo(0,0);setTimeout(()=>{countUps();celebrate(rx,R);},220);
+  gui.screen='result';gameSave();render();window.scrollTo(0,0);setTimeout(()=>{countUps();starSfx(rx.stars||0);celebrate(rx,R);if(rx.lvl)setTimeout(()=>{achToast({k:'Subes de nivel',n:`¡Nivel ${rx.lvl.l}!`,d:rx.lvl.title});confetti(60);},1400);},220);
 }
 function renderResult(el){
   const G=GAME,L=gui.lastRes,R=L.R,c=CBY[L.id],P=L.P,X=L.x||{},DS=standings(G);
@@ -2678,7 +2766,7 @@ function renderResult(el){
   const out=R.dnf.map(x=>`<li>${esc(dName(G,x.d))}: ${esc(x.why.toLowerCase())} (vuelta ${x.lap})</li>`).join('');
   const last=G.season.round>=G.cal.length;
   el.innerHTML=`<div class="view"><section class="panel"><span class="eyebrow">Carrera ${L.ri+1} de ${G.cal.length} · ${G.year}${L.rain!=='seco'?' · con lluvia':''}</span><h2>${c.flag} GP de ${esc(c.n)}</h2>
-    <div class="podium">${R.order.slice(0,3).map((d,i)=>`<div class="pd p${i+1}"><span class="num">${i+1}</span><b>${G.drivers[d].f||''} ${esc(dShortN(G,d))}</b><small>${esc(tName(G,G.drivers[d].team))}</small></div>`).join('')}</div>
+    ${starsHTML(X)}<div class="podium">${R.order.slice(0,3).map((d,i)=>`<div class="pd p${i+1}"><span class="num">${i+1}</span><b>${G.drivers[d].f||''} ${esc(dShortN(G,d))}</b><small>${esc(tName(G,G.drivers[d].team))}</small></div>`).join('')}</div>
     ${pts}${ex.length?`<div class="rx">${ex.join('')}</div>`:''}
     <p class="hint">Pole: ${esc(dName(G,L.pole))} · Vuelta rápida: ${esc(dName(G,R.fl))} · ${R.ot} adelantamientos${L.SR?` · Sprint: ${esc(dName(G,L.SR.w))}`:''}${R.lapsDone<R.laps?` · carrera acortada (${R.lapsDone} de ${R.laps} vueltas)`:''}</p>
     <div class="row" style="margin-top:10px"><button class="btn primary" data-act="gNext">${last?'Ir al invierno':'Siguiente carrera'}</button></div></section>
@@ -2722,6 +2810,133 @@ function gameAction2(a,b,e){
     case 'gVote':{const W=G.winter;W.vote=runVote(G,W.props||[],G.mode==='jefe'?W.myVotes:null);
       const mineYes=W.vote.filter((v,i)=>v.pass&&(G.mode==='dueno'||(G.mode==='jefe'&&W.myVotes[i]))).length;
       if(mineYes){GSTAT.rules+=mineYes;achSave();if(GSTAT.rules>=5)unlock('rules5');SFX.pop();}gameSave();break;}
+    default:return gameAction3(a,b,e);
+  }
+  keepScroll(render);return true;
+}
+
+// =====================================================================
+// JUEGO · para novatos: partida rápida, tutorial, estrellas, niveles,
+// ayuda y pantallas más claras
+// =====================================================================
+
+// ---------- calendarios cortos
+const CAL_SHORT=[['melbourne'],['suzuka'],['monaco'],['silverstone',1],['spa-francorchamps'],['monza'],['interlagos',1],['yas-marina']];
+const CAL_MED=[['bahrain'],['melbourne'],['suzuka'],['monaco'],['montreal'],['silverstone',1],['spa-francorchamps'],['monza'],['marina-bay'],['austin',1],['interlagos'],['yas-marina']];
+function calFor(len){if(len==='tuya')return null;const L=len==='media'?CAL_MED:CAL_SHORT;const ids=L.map(x=>x[0]);const g=autoGaps(ids,'2026-03-08');return L.map((x,i)=>({id:x[0],sprint:!!x[1],gap:i?g[i]:0}));}
+
+// ---------- niveles
+const LVL_T=['Novato','Promesa','Piloto de pruebas','Piloto oficial','Ganador de GP','Estrella','Campeón','Leyenda'];
+function lvlOf(xp){let l=1,need=100,acc=0;while(xp>=acc+need){acc+=need;l++;need=100+(l-1)*60;}return {l,cur:xp-acc,need,title:LVL_T[Math.min(LVL_T.length-1,l-1)]};}
+function levelHTML(){const L=lvlOf(GSTAT.xp||0);
+  return `<section class="panel lvl"><div class="lvlb"><span>Nivel</span><b class="num">${L.l}</b></div><div class="lvlr"><h3>${esc(L.title)}</h3><div class="track"><div class="fill good" style="width:${L.cur/L.need*100}%"></div></div><p class="hint">${L.cur} / ${L.need} XP para el nivel ${L.l+1} · ${GSTAT.stars||0} ★ ganadas</p></div></section>`;}
+
+// ---------- estrellas por carrera
+function rateRace(G,R,Q,rx,x){
+  let stars=0,why='';const pos=d=>{const i=R.order.indexOf(d);return i<0?99:i+1;};
+  if(G.mode==='dueno'){const s=[];if(rx.mission&&rx.mission.ok){stars++;s.push('acertaste el ganador');}if(R.ot>=35){stars++;s.push('muchos adelantamientos');}
+    const g2=R.order[1]!=null?R.gap[R.order[1]]:99;if(g2<3){stars++;s.push('final ajustado');}why=s.length?s.join(' · '):'Carrera tranquila: pocos adelantamientos';}
+  else{const mine=myDriverIds(G).filter(d=>R.grid[d]);if(!mine.length){rx.stars=null;return;}
+    const exp=Math.min(...mine.map(d=>expectedPos(G,d)||20)),best=Math.min(...mine.map(pos));
+    if(best===99){stars=0;why='Abandono: esta vez no hubo suerte';}
+    else if(best===1){stars=3;why='¡Victoria!';}
+    else if(best<=Math.max(1,exp-3)){stars=3;why=`P${best} con un coche para P${exp}: ¡brutal!`;}
+    else if(best<=exp){stars=2;why=`P${best}: igual o mejor de lo que da tu coche (P${exp})`;}
+    else{stars=1;why=`P${best}: tu coche daba para P${exp}`;}}
+  const win=G.mode!=='dueno'&&R.order[0]&&isMine(G,R.order[0]),pod=G.mode!=='dueno'&&R.order.slice(0,3).some(d=>isMine(G,d));
+  const xp=stars*25+(win?50:pod?20:0)+(rx.mission&&rx.mission.ok?25:0)+(rx.ach?rx.ach.length*40:0);
+  const before=lvlOf(GSTAT.xp||0).l;GSTAT.xp=(GSTAT.xp||0)+xp;GSTAT.stars=(GSTAT.stars||0)+stars;const after=lvlOf(GSTAT.xp);
+  const Ss=G.season;Ss.stars=Ss.stars||[];Ss.stars[rx.ri]=stars;
+  rx.stars=stars;rx.why=why;rx.xp=xp;if(after.l>before)rx.lvl=after;
+  if(rx.lvl&&x.silent)achToast({k:'Subes de nivel',n:`¡Nivel ${after.l}!`,d:after.title});
+}
+function starsHTML(X){if(X.stars==null)return '';
+  return `<div class="stars" aria-label="${X.stars} de 3 estrellas">${[0,1,2].map(i=>`<span class="st ${i<X.stars?'on':''}" style="animation-delay:${0.3+i*0.3}s">★</span>`).join('')}</div><p class="starwhy">${esc(X.why)} <span class="xpgain">+${X.xp} XP</span></p>`;}
+function starSfx(n){for(let i=0;i<n;i++)setTimeout(()=>SFX.tone(700+i*220,0.18,'triangle',0.13,0,1.4),300+i*300);}
+function starCells(G){const Ss=G.season,ri=Ss.round;return `<div class="sprog" aria-label="Estrellas por carrera">${G.cal.map((r,i)=>{const s=Ss.stars&&Ss.stars[i];return `<i class="${i<ri?'s'+(s??0):i===ri?'cur':''}" title="${esc(CBY[r.id].n)}${i<ri?': '+(s??0)+' ★':''}"></i>`;}).join('')}</div>`;}
+
+// ---------- tutorial: explicación la primera vez de cada cosa
+let TIPS={};try{TIPS=JSON.parse(localStorage.getItem('fp-tips')||'{}')||{};}catch(e){TIPS={};}
+let COACH_NEXT=null;
+const COACH={
+  welcome:{t:G=>`¡Bienvenido, ${esc(G.drivers[G.player.driver]?.n||'piloto')}!`,i:'<div class="cflag"><i></i><i></i><i></i><i></i></div>',
+    p:G=>[`Eres piloto de <b>${esc(tName(G,G.drivers[G.player.driver]?.team))}</b>. La temporada tiene <b>${G.cal.length} carreras</b>.`,
+      'En cada carrera: <b>1.</b> haces tu vuelta de clasificación, <b>2.</b> das la salida con el semáforo y <b>3.</b> decides en los momentos clave.',
+      'Cada carrera te da de 0 a 3 <b>★</b> según lo bien que lo hagas con el coche que tienes. Las estrellas te suben de nivel.'],b:'¡A correr!'},
+  quali:{t:'La clasificación',i:'<div class="qbar mini"><div class="zone" style="left:38%;width:20%"><i></i></div><div class="mk mkmove"></div></div>',
+    p:['Decide desde qué puesto sales. Cuanto más adelante, más fácil la carrera.','Una raya negra va de lado a lado. Toca <b>¡Frena!</b> justo cuando pase por la <b>zona verde</b>. Son 3 toques, uno por sector.','Si das en el centro exacto, el sector sale <b>morado</b>: tu mejor vuelta.']},
+  lights:{t:'La salida',i:'<div class="mini-lights"><i></i><i></i><i></i><i></i><i></i></div>',
+    p:['Se encienden <b>5 luces rojas</b>, una a una.','Cuando se <b>apaguen todas</b>, toca la pantalla lo más rápido que puedas: si eres rápido, adelantas coches en la salida.','Si tocas antes de que se apaguen, es <b>salida en falso</b> y te ponen 5 segundos de castigo.']},
+  duel:{t:'¡Duelo!',i:'<div class="mini-duel"><span>Por dentro</span><span>Por fuera</span><span>Esperar</span></div>',
+    p:['Estás pegado a otro coche. Es como <b>piedra, papel o tijera</b>.','Si atacas, elige un lado. Si el rival tapa el otro lado, <b>le pasas</b>. Si tapa el tuyo, te cierra.','Si te atacan a ti, elige qué lado tapar. Tienes 4 segundos.']},
+  dec:{t:'Momento clave',i:'<div class="cdbar mini"><i></i></div>',
+    p:['A veces la carrera se para para que <b>tú decidas</b>: si entras a cambiar ruedas o sigues en pista.','Tienes unos segundos. Si no eliges, el equipo decide por ti.','Pista: con el <b>coche de seguridad</b> en pista, parar cuesta la mitad de tiempo.']},
+  card:{t:'Carta sorpresa',i:'<div class="mini-card">?</div>',
+    p:['Antes de algunas carreras te llega una carta con una decisión.','Cada opción tiene consecuencias: dinero, fama, un coche más rápido… o un buen lío.']},
+};
+function coach(id,then){if(TIPS[id]||!COACH[id]){then&&then();return;}TIPS[id]=1;try{localStorage.setItem('fp-tips',JSON.stringify(TIPS));}catch(e){}
+  const C=COACH[id],G=GAME,f=v=>typeof v==='function'?v(G):v;COACH_NEXT=then||null;
+  ovl(`<div class="coach"><span class="eyebrow">Cómo se juega</span><div class="cill">${C.i}</div><h2>${f(C.t)}</h2>${f(C.p).map(x=>`<p>${x}</p>`).join('')}<button class="btn primary big" data-act="gCoachOk">${C.b||'¡Entendido!'}</button></div>`,'ovl-coach');}
+function startQualiGame(){coach('quali',startQualiGame0);}
+function startLights(){coach('lights',startLights0);}
+function openDuel(c,o,attack){LIVE.paused=true;SFX.engineOff();LIVE.engOn=false;coach('duel',()=>openDuel0(c,o,attack));}
+function openDecision(kind,cars){LIVE.paused=true;SFX.engineOff();LIVE.engOn=false;coach('dec',()=>openDecision0(kind,cars));}
+function openCard(){coach('card',openCard0);}
+
+// ---------- ayuda y glosario
+const GLOS=[['Pole','Salir primero. Se gana en la clasificación.'],['Parrilla','La fila de coches antes de la salida, ordenada por la clasificación.'],
+  ['Boxes / parada','Entrar al garaje a cambiar las ruedas. Cuesta unos 20 segundos.'],['Neumáticos','<b>B</b> blando: rápido pero dura poco. <b>M</b> medio: equilibrado. <b>D</b> duro: más lento pero dura mucho. <b>I</b> y <b>LL</b>: para lluvia.'],
+  ['Safety car','Coche que sale tras un accidente. Todos van despacio y en fila, así que es buen momento para parar.'],['VSC','Safety car "virtual": todos frenan, pero sin agruparse.'],
+  ['Vuelta rápida (VR)','La vuelta más rápida de la carrera. A veces da un punto extra.'],['Sprint','Una mini carrera el sábado. Da pocos puntos.'],
+  ['Doblado','Ir una vuelta por detrás del líder.'],['Constructores','El mundial de equipos: suma los puntos de sus dos pilotos.'],['Puntos','Del 1º al 10º: 25, 18, 15, 12, 10, 8, 6, 4, 2 y 1 (con el reglamento normal).']];
+function helpHTML(){return `<div class="help"><span class="eyebrow">Ayuda</span><h2>¿Cómo se juega?</h2>
+  <ol class="steps"><li><b>Clasificación.</b> Toca "¡Frena!" en la zona verde 3 veces. Cuanto mejor, más adelante sales.</li><li><b>Salida.</b> Toca la pantalla cuando se apaguen las 5 luces rojas.</li><li><b>Carrera.</b> Mira cómo vas y decide en los duelos y las paradas. Puedes acelerar (x3, x10) o saltar al siguiente momento.</li><li><b>Resultado.</b> Sumas puntos para el mundial y de 0 a 3 ★. Al final de la temporada, quien más puntos tiene es campeón.</li></ol>
+  <p class="eyebrow" style="margin-top:6px">Palabras de F1</p><dl class="glos">${GLOS.map(([a,b])=>`<dt>${a}</dt><dd>${b}</dd>`).join('')}</dl>
+  <button class="btn primary big" data-act="gOvlClose">Cerrar</button></div>`;}
+const helpBtn='<button class="btn sm ghost helpb" data-act="gHelp" title="Cómo se juega" aria-label="Cómo se juega">?</button>';
+
+// ---------- menú: partida rápida
+function heroHTML(){const t=ERAS['2025'].teams[3];
+  return `<section class="panel hero2"><span class="eyebrow">Modo juego</span><h2>Vive una temporada de F1</h2>
+   <p>Eres un piloto nuevo en <b>${esc(t.n)}</b>. Clasifica, sal como un cohete, gana duelos y lucha por el mundial.</p>
+   <div class="hero-facts"><span><b>8</b> carreras</span><span><b>15</b> minutos</span><span><b>0</b> cosas que saber</span></div>
+   <label class="field"><span>¿Cómo se llama tu piloto?</span><input id="qsName" type="text" maxlength="24" placeholder="Tu nombre" autocomplete="off"></label>
+   <button class="btn primary big" data-act="gQuickStart">▶ Jugar ahora</button>
+   <button class="linkish" data-act="gHelp">¿Cómo se juega?</button></section>`;}
+function continueHTML(){const g=GAMES[0];if(!g)return '';
+  return `<section class="panel cont"><div><span class="eyebrow">Seguir jugando</span><h3>${esc(g.who||'')}</h3><p class="hint">${MODE_N[g.mode]} · temporada ${g.year}${g.over?' · terminada':` · carrera ${g.round+1}`}</p></div><button class="btn primary big" data-act="gLoad" data-id="${g.id}">▶ Continuar</button></section>`;}
+
+// ---------- directo: tu posición en grande y leyenda de ruedas
+function myPosHUD(o){const el=$('#mypos');if(!el||!LIVE)return;const G=GAME;const c=o.find(x=>isMine(G,x.d));
+  if(G.mode==='dueno'||!c){el.hidden=true;return;}el.hidden=false;const p=o.indexOf(c)+1,g=c.grid-p,prev=+el.dataset.p||p;el.dataset.p=p;
+  el.innerHTML=`<span>Vas</span><b class="num">P${p}</b><small class="${g>0?'up':g<0?'down':'same'}">${g>0?'▲'+g:g<0?'▼'+(-g):'='} desde la salida</small>`;
+  if(p!==prev){el.classList.remove('bump','drop');void el.offsetWidth;el.classList.add(p<prev?'bump':'drop');}
+  const mc=$('#myctrl');if(mc&&!mc.querySelector('.tyleg'))mc.insertAdjacentHTML('beforeend','<p class="hint tyleg">Ruedas: <b>B</b> rápidas, duran poco · <b>M</b> equilibradas · <b>D</b> lentas, duran mucho · <b>I</b>/<b>LL</b> lluvia</p>');}
+const TYH={S:'Rápidas, duran poco',M:'Equilibradas',H:'Lentas, duran mucho',I:'Para lluvia ligera',W:'Para diluvio'};
+function tyH(k){return k.startsWith('box-')?`<small>${TYH[k.slice(4)]||''}</small>`:k==='stay'?'<small>No pierdes tiempo ahora</small>':'';}
+
+// ---------- invierno rápido
+function winterSkip(){const G=GAME,W=G.winter;if(!W)return;
+  if(!W.evo)W.evo=evolveDrivers(G);if(!W.market)marketOpen(G);
+  if(!W.marketDone){if(G.mode==='piloto'){const me=G.drivers[G.player.driver];if(me.yrs<=0){W.offers=W.offers||pilotOffers(G);const o=W.offers.slice().sort((a,b)=>G.teams[b.t].car-G.teams[a.t].car)[0];if(o)acceptOffer(G,o);}}
+    if(G.mode==='jefe')W.autoMine=true;aiMarket(G);W.autoMine=false;W.marketDone=true;}
+  if(!W.vote){W.props=W.props||(G.mode==='dueno'?[]:fiaProposals(G));W.myVotes=W.myVotes||W.props.map(()=>true);W.vote=runVote(G,W.props,G.mode==='jefe'?W.myVotes:null);}
+  newSeason(G);gui.screen='hub';gameSave(true);toast(`¡Empieza la temporada ${G.year}!`);render();window.scrollTo(0,0);}
+function seasonStarsHTML(h){if(h.stars==null)return '';const L=lvlOf(GSTAT.xp||0);
+  return `<div class="rxi is-ok" style="margin-top:12px"><div><span class="eyebrow">Tu temporada en estrellas</span><b class="sbig">${h.stars} <span>de ${h.maxStars} ★</span></b><small>Nivel ${L.l} · ${esc(L.title)}</small></div></div>`;}
+
+// ---------- acciones
+function gameAction3(a,b,e){
+  const G=GAME;
+  switch(a){
+    case 'gCoachOk':{ovlClose();const f=COACH_NEXT;COACH_NEXT=null;if(f)f();return true;}
+    case 'gHelp':ovl(helpHTML(),'ovl-list');return true;
+    case 'gLen':gui.setup.len=b.dataset.v;break;
+    case 'gCustom':gui.openCustom=!gui.openCustom;break;
+    case 'gQuickStart':{const nm=(($('#qsName')||{}).value||'').trim().slice(0,24)||'Novato';const E=ERAS['2025'];
+      GAME=newGame('piloto','2025',{team:E.teams[3].id,name:nm,num:7,flag:'🇪🇸',style:'consistente',cal:calFor('corta')});GAME.quick=1;
+      gui.screen='hub';gameSave(true);render();window.scrollTo(0,0);SFX.init();setTimeout(()=>coach('welcome',null),200);return true;}
+    case 'gWinterSkip':winterSkip();return true;
     default:return false;
   }
   keepScroll(render);return true;
